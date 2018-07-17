@@ -18,6 +18,13 @@ pipeline
     }
     stages
     {
+        stage('My Setup')
+        {
+            steps
+            {
+                setup()    
+            }
+       }
         stage('Build preparations')
         {
             steps
