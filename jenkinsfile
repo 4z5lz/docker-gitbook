@@ -41,7 +41,8 @@ pipeline
             //         env.IMAGE = "$PROJECT:$VERSION"
             //         env.IMAGE_LATEST = "$PROJECT:latest"
             //    }
-                builPreparationS()
+                
+                builPreparations()
            }
        }
        stage('Docker build') 
@@ -72,7 +73,7 @@ pipeline
         //         	docker.image("${env.IMAGE_LATEST}").push()
         //             }
         //       }
-                publish()
+                finishPublish()
            }
         }
     }
