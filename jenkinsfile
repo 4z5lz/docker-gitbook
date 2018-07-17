@@ -42,7 +42,7 @@ pipeline
             //         env.IMAGE_LATEST = "$PROJECT:latest"
             //    }
                 
-                builPreparations()
+                buildPreparations()
            }
        }
        stage('Docker build') 
